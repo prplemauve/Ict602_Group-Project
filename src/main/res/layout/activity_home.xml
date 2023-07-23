@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="113dp"
+        android:gravity="center"
+        android:text="Home"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="bottomAppBar,map_button,phone_button,info_button" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="0dp"
+        app:backgroundTint="#6082B6"
+        app:titleTextColor="#4CAF50"
+        tools:ignore="BottomAppBar" />
+
+    <Button
+        android:id="@+id/info_button"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="164dp"
+        android:backgroundTint="#4682b4"
+        android:text="Info"
+        android:textColor="#0C0C0C" />
+
+    <Button
+        android:id="@+id/phone_button"
+        android:layout_width="216dp"
+        android:layout_height="51dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="#4682b4"
+        android:gravity="center"
+        android:text="Check In"
+        android:textColor="#0C0C0C" />
+
+    <Button
+        android:id="@+id/map_button"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="235dp"
+        android:backgroundTint="#4682b4 "
+        android:text="map"
+        android:textColor="#0C0C0C" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="199dp"
+        android:layout_below="@id/home"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="214dp"
+        android:layout_marginBottom="319dp"
+        app:srcCompat="@drawable/logo" />
+
+</RelativeLayout>

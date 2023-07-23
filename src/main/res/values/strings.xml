@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Medical Monitoring Application</string>
+    <string name="title_activity_map">Map</string>
+
+        <string name="full_name">Full Name</string>
+        <string name="male">Male</string>
+        <string name="female">Female</string>
+        <string name="contact_no">Contact no.</string>
+        <string name="gender">Gender</string>
+        <string name="password">Password</string>
+        <string name="register">Register</string>
+        <string name="confirm_password">Confirm Password</string>
+        <string name="email">Email</string>
+
+</resources>
